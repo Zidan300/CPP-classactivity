@@ -14,7 +14,6 @@ struct Node {
     }
 };
 
-// Insert into BST
 Node* insert(Node* root, int value) {
     if (!root) return new Node(value);
     if (value < root->data)
@@ -24,7 +23,6 @@ Node* insert(Node* root, int value) {
     return root;
 }
 
-// Print tree with arrows
 void printTree(Node* root, string prefix = "", bool isLeft = true) {
     if (root == nullptr) return;
 
@@ -42,7 +40,7 @@ void printTree(Node* root, string prefix = "", bool isLeft = true) {
 int main() {
     Node* root = nullptr;
 
-    // Insert nodes
+
     root = insert(root, 50);
     insert(root, 30);
     insert(root, 70);
@@ -50,8 +48,6 @@ int main() {
     insert(root, 40);
     insert(root, 60);
     insert(root, 80);
-
-
     printTree(root);
 
     return 0;

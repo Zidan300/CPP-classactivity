@@ -2,12 +2,10 @@
 #include <sstream>
 #include <string>
 using namespace std;
-
 struct Node {
     int data;
     Node* next;
 };
-
 int main() {
     Node* head = nullptr;
     Node* tail = nullptr;
@@ -15,20 +13,18 @@ int main() {
     int value;
 
     cout << "Enter numbers separated by spaces: ";
-    getline(cin, line); // read entire line of numbers
+    getline(cin, line); 
 
     stringstream ss(line);
     while (ss >> value) {
         Node* newNode = new Node{value, nullptr};
         if (!head) {
-            head = tail = newNode; // first node
+            head = tail = newNode; 
         } else {
-            tail->next = newNode; // add to end
+            tail->next = newNode; 
             tail = newNode;
         }
     }
-
-    // Print linked list
     cout << "Linked list: ";
     Node* temp = head;
     while (temp) {
