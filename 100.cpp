@@ -1,11 +1,11 @@
 #include <iostream>
-#include <ctime>
-#include <cstdio>
 using namespace std;
 
-int main() {
-    time_t now = time(0);
-    char* dt = ctime(&now);
-    cout << "Current date and time: " << dt;
-    return 0;
+int main(){
+int i;
+	for (i=1; i<100; i++){
+		cout << "hello world \n";
+		
+	}
+	return 0;
 }
