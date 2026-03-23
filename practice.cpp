@@ -1,35 +1,35 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int num1, num2, result;
-    char op;
+    int num1, num2, sum;
+    char operatorChoose;
 
-    // Prompt the user for input
+    // Get input from user
     cout << "Enter the first number: ";
     cin >> num1;
     cout << "Enter the second number: ";
     cin >> num2;
-    cout << "Choose the operation (*, +, %, -): ";
-    cin >> op;
 
-    // Perform the selected operation
-    if (op == '+') {
-        result = num1 + num2;
-    } else if (op == '-') {
-        result = num1 - num2;
-    } else if (op == '*') {
-        result = num1 * num2;
-    } else if (op == '/') {
-        result = num1 / num2; // Integer division
-    } else if (op == '%') {
-        result = num1 % num2; // Remainder
-    } else {
-        cout << "Invalid operator!" << endl;
-        return 1; // Exit with error code
+    // Prompt user to choose an operator (+, -, x, /)
+    cout << "Choose an operator: ";
+   cin >> operatorChoose;
+
+    // Perform calculation based on user's input
+    if (operatorChoose == '+') {
+        sum = num1 + num2;
+    } else if (operatorChoose == '-') {
+        sum = num1 - num2;
+    } else if (operatorChoose == '*') {
+        sum = num1 * num2;
+    } else if (operatorChoose == '/') {
+        sum = num1 / num2;
     }
 
-    // Display the result
-    cout << "Result: " << result << endl;
+    // Print result to the screen
+    cout << "Result: ";
+    cout << sum << endl;
+
     return 0;
 }
