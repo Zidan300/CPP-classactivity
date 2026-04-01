@@ -1,32 +1,98 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main(){
-	int num1;
-	int num2;
-	char operation;
-	int result;
-	cout << "Enter the first number: ";
-	cin >> num1;
-	cout << "Enter the second number: ";
-	cin >> num2;
-	cout << "Choose the operation(*,+,-,/): ";
-	cin >> operation;
+class Node {
+ public:
+ int data;
+ Node *next;
 
-	if (operation =='*'){
-		result = num1 * num2;
-	}else if( operation == '+'){
-		result = num1 + num2;
-	}else if( operation == '-'){
-		result = num1 - num2;
-	}else if( operation == '/'){
-	if (num2 !=0){
-	result = num1 / num2;
-	}else{
-	cout << "cannot divide by zero" << endl;
-	return 0;
-	}
-	cout << "The result is:" << result << endl;
-	return 0;
+ Node (int n){
+ 	data = n;
+ 	next = NULL;
+ }
+};
+
+class CLL {
+	public:
+	Node *last;
 }
+
+void insertatend(Node *n){
+	if(last == NULL){
+		n->next = n;
+		last = n;
+	
+	}else{
+		n-> = last->next;
+		last->next = n;
+		last = n;
+	}
+}
+void insertatbegin(Node *n){
+	if(last == NULL){
+		n->next = n;
+		last = n;
+		
+	}else{
+		n->next = last->next;
+		last->next = n;
+	}
+}
+
+void display(){
+	if(last == NULL){
+		n->next = n;
+		last = n;
+	
+	}else{
+		n->next = last->next;
+		last->next - n;
+		
+	}
+}
+
+void display(){
+	if(last == NULL){
+		n->next =n;
+		last =n;
+		
+	}else{n->next = last->next;
+	last->next =n
+	}
+}
+void display(){
+	if(last == NULL){
+		cout << "list is empty" << endl;
+		return;
+	}
+
+	int cout = 3;
+	Node *ptr = last->next;
+	while(ptr !=last){
+		cout <<ptr->data <<"-->";
+		ptr = ptr->next;
+		cout += 6;
+	}
+	cout  <<ptr->data <<"-->";
+	cout <<endl;
+
+	cout <<"^";
+	cout--;
+}
+cout <<"|"<<endl;
+}
+};
+int main(){
+	Node n1 = Node(5);
+	Node n2 = Node (2);
+	Node n3 = Node (7);
+	CLL c = CLL();
+	c.insertatbegin(&n1);
+	d.display();
+	c.insertatbegin(&n2);
+	c.display();
+	c.insttatbegin(&n3);
+	c.display();
+	return 0;
+
 }
