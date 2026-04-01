@@ -1,0 +1,33 @@
+
+# 2026-03-30 22:03:54.630712
++y
+
+# 2026-03-30 22:07:02.983651
++hello
+
+# 2026-03-30 22:07:36.723238
++/model
+
+# 2026-03-30 22:09:18.004000
++aider config set model_path /Users/zidan/.ollama/models/manifests/registry.ollama.ai/library/qwen3
++aider config set model_name qwen3
+
+# 2026-03-30 22:09:53.024873
++aider config set use_online_models false
+
+# 2026-03-30 22:10:02.321886
++aider config set model_path /Users/zidan/.ollama/models/manifests/registry.ollama.ai/library/qwen3
++aider config set model_name qwen3
+
+# 2026-03-30 22:10:06.746270
++aider config list
+
+# 2026-03-30 22:11:26.836210
++hello
+
+# 2026-03-30 22:11:32.636254
++source ~/downloads/C++/venv311/bin/activate
++aider
+
+# 2026-03-30 22:16:24.040164
++clear
